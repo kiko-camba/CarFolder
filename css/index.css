@@ -27,6 +27,7 @@ header{
 
 .logo{
     justify-content: space-around;
+    padding: 25px 30px;
     color: #fff;
     text-decoration: none;
     font-size: 40px;
@@ -50,6 +51,7 @@ header nav{
     font-weight: bold;
     font-size: 18px;
     position: relative;
+   
     
     
 
@@ -63,25 +65,8 @@ header nav{
 
 .nav:hover,
 .nav:focus{
-    color:#fff;
+    color:hsl(151.7, 66%, 47.3%);
    
-}
-.nav::after{
-    content: '';
-    height: var(--line);
-    width: 100%;
-    border-radius: 2px;
-    background: hsl(151.7, 66%, 47.3%);
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    opacity: 0;
-    transition: all 0.4s;
-    pointer-events: none;
-
-}
-.nav:hover::after{
-    opacity: 1;
 
 
 
@@ -232,35 +217,36 @@ span{
 
 @media (min-width: 720px){
     header{
+        
         position: fixed;
         width: 100%;
+      
         
     }
     header .container-header {
         display: flex;
-        justify-content: center;
+        justify-content:space-between;
         align-items: center;
+        align-content: center;
         flex-direction: row;
-        flex-wrap: wrap;
+       
         height: 100px;
-        padding-bottom: 20px;
+      
     }
     header nav{
-        justify-content: space-between;
         flex-direction: row;
-        padding-bottom: 20px ;
-        padding-right: 20px;
-        justify-content: center;
+       padding-right: 20px;
     }
-  
-    .hero {
-       padding: 20px 20px 20px 20px;
-        
-
-    }
+    .nav:hover,
+    .nav:focus{
+    color:#fff;
+}
+.hero {
+    padding: 20px 20px 20px 20px;
+}
     .hero h1{
-        font-size: 100px;
-    }
+    font-size: 100px;
+}
     .form{
   
         background:hsl(203.3, 29%, 8.5%);
